@@ -1,6 +1,6 @@
 Name: eth-tools
-Version: 11.5.0.0
-Release: 173%{?dist}
+Version: 11.7.0.0
+Release: 1%{?dist}
 Summary: Intel Ethernet Fabric Suite basic tools and libraries for fabric management
 
 License: BSD
@@ -91,6 +91,10 @@ BUILDDIR=%{_builddir} DESTDIR=%{buildroot} LIBDIR=%{_prefix}/lib DSAP_LIBDIR=%{_
 
 
 %changelog
+* Thu Oct 31 2024 Kamal Heib <kheib@redhat.com> - 1:11.7.0.0-1
+- Update to upstream release 11.7.0.0
+- Resolves: RHEL-47153
+
 * Fri Jun 02 2023 Kamal Heib <kheib@redhat.com> - 1:11.5.0.0-173
 - Update to upstream release 11.5.0.0
 - Resolves: rhbz#2144026
