@@ -1,11 +1,11 @@
 Name: eth-tools
-Version: 11.7.0.0
-Release: 1%{?dist}
+Version: 12.1.0.0
+Release: 4%{?dist}
 Summary: Intel Ethernet Fabric Suite basic tools and libraries for fabric management
 
 License: BSD
 Url: https://github.com/intel/eth-fast-fabric
-Source: %url/archive/refs/tags/v%{version_no_tilde}.tar.gz
+Source: %url/archive/%{version_no_tilde}/eth-fast-fabric-%{version_no_tilde}.tar.gz
 ExclusiveArch: x86_64
 # The Intel(R) Ethernet Fabric Suite product line is only available on x86_64 platforms at this time.
 
@@ -91,6 +91,22 @@ BUILDDIR=%{_builddir} DESTDIR=%{buildroot} LIBDIR=%{_prefix}/lib DSAP_LIBDIR=%{_
 
 
 %changelog
+* Fri Jan 23 2026 Kamal Heib <kheib@redhat.com> - 1:12.1.0.0-4
+- Rebuilt for RHEL-9.8
+- Resolves: RHEL-97742
+
+* Mon Jan 05 2026 Kamal Heib <kheib@redhat.com> - 1:12.1.0.0-3
+- Rebuilt after updating rdma-core.
+- Resolves: RHEL-97742
+
+* Wed Dec 17 2025 Kamal Heib <kheib@redhat.com> - 1:12.1.0.0-2
+- bump release to rebuild in sidetag
+- Resolves: RHEL-97742
+
+* Tue Dec 09 2025 Kamal Heib <kheib@redhat.com> - 1:12.1.0.0-1
+- Update to upstream release 12.1.0.0
+- Resolves: RHEL-97742
+
 * Thu Oct 31 2024 Kamal Heib <kheib@redhat.com> - 1:11.7.0.0-1
 - Update to upstream release 11.7.0.0
 - Resolves: RHEL-47153
